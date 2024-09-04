@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Five Hotel</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Noto+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+     
+        <div class="about lobster-font-family">
+            <div class="container">
+                <h2 class="text-center text-capitalize" id="aboutus">About our Hostel</h2>
+                <img src="imgs/shape.png">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h4>A best place to enjoy your life</h4>
+                        <p>Welcome to our hostel, where comfort and community come together. Our mission is to provide a safe and nurturing environment for students and professionals seeking a home away from home. Located in a prime area, our facility offers a range of amenities designed to cater to the needs of our residents.</p>
+                        <p>At our hostel, we believe in creating a space where you can thrive both personally and professionally. Our rooms are designed with your comfort in mind, featuring modern furnishings and a cozy ambiance. We offer high-speed internet, nutritious meals, and convenient laundry services to make your stay as pleasant as possible.</p>
+                        <p>Our dedicated team is committed to ensuring that every resident feels valued and supported. From 24/7 security to regular room cleaning, we prioritize your safety and well-being. Our communal areas are perfect for relaxation and socializing, fostering a sense of community among our residents.</p>
+                        <p>Whether you’re here for a short visit or a long-term stay, we strive to make your experience memorable and enjoyable. Explore the variety of services and amenities we offer, and let us be your trusted partner in making your stay comfortable and fulfilling.</p>
+	                   <button><a href="index.html#aboutus">Back</a></button>
+                       
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="img"></div>
+                    </div>
+                </div>
+                <div class="row">
+                   
+                </div>
+            </div>
+        </div>
+        
+        
+        <footer class="noto-font-family">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Useful links</h3>
+                            <ul class="text-capitalize">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Rooms</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                         <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Find us</h3>
+                            <p>Avni Hospital 2nd floor ,<br>
+                                Chakeri Mod, Kanpur<br>
+                                (+91) 8808829249<br>
+                                (+91) 7248532208<br>
+				anayhostel@gmail.com
+                            </p>
+                        </div>
+                       <!-- <div class="col-lg-4 col-md-6 col-12 form">
+                            <h3>News letter</h3>
+                            <form>
+                                <input type="email" placeholder="Email">
+                                <input type="submit">
+                            </form>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="copyright noto-font-family">
+            <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/">Free Html Templates</a></p>
+        </div>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            });
+        </script>
+    </body>
+</html>

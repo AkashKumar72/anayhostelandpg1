@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Five Hotel</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Noto+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div class="about lobster-font-family">
+            <div class="container">
+
+                <div class="row">
+                  
+                </div>
+                <h2 class="text-capitalize" id="room">Rooms for you</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="img1"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="block">
+                            <div>
+                                <img src="imgs/shape.png">
+                                <strong>₹4500</strong>
+                                <h5>Triple sharing rooms with common washroom</h5>
+                                <p>Experience community living with our triple rooms, where friendship and collaboration meet comfort. Ideal for students who thrive in a supportive and social environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div class="about lobster-font-family">
+            <div class="container">
+
+                <div class="row">
+                  
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="img1"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="block">
+                            <div>
+                                <img src="imgs/shape.png">
+                                <strong>₹5000</strong>
+                                <h5>Triple sharing rooms with separate washroom</h5>
+                                <p>Experience community living with our triple rooms, where friendship and collaboration meet comfort. Ideal for students who thrive in a supportive and social environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		        <center><button><a href="index.html#room3">Back</a></button></center>
+                
+            </div>
+        </div>
+        
+        <footer class="noto-font-family">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Useful links</h3>
+                            <ul class="text-capitalize">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Rooms</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                         <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Find us</h3>
+                            <p>Avni Hospital 2nd floor ,<br>
+                                Chakeri Mod, Kanpur<br>
+                                (+91) 8808829249<br>
+                                (+91) 7248532208<br>
+				anayhostel@gmail.com
+                            </p>
+                        </div>
+                       <!-- <div class="col-lg-4 col-md-6 col-12 form">
+                            <h3>News letter</h3>
+                            <form>
+                                <input type="email" placeholder="Email">
+                                <input type="submit">
+                            </form>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="copyright noto-font-family">
+            <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/">Free Html Templates</a></p>
+        </div>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            });
+            
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+
+                // Get form values
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                var message = document.getElementById('message').value;
+
+                // Create the WhatsApp message
+                var whatsappMessage = `Hello! Here are the details:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+
+                // WhatsApp API URL
+                var whatsappNumber = '8808829249';
+                var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+                // Open WhatsApp with the message
+                window.open(whatsappURL, '_blank');
+            });
+
+
+        </script>
+    </body>
+</html>
