@@ -19,21 +19,6 @@ body {
     margin: 0 auto;
 }
 
-.main-font-family {
-    font-family: 'Lobster Two', cursive;
-}
-
-.noto-font-family {
-    font-family: 'Noto Serif', serif;
-}
-
-.lobster-font-family {
-    font-family: 'Lobster', cursive;;
-}
-
-.roboto-font-family {
-    font-family: 'Roboto', sans-serif;
-}
 
 .overlay {
     background-color: rgba(43, 33, 2, .9);
@@ -98,7 +83,7 @@ header h1 {
 header h1 span {
     color: #F3B229;
     border: 1px solid #FFF;
-    font-size: 120px;
+    font-size: 100px;
     line-height: 2;
     padding: 10px
 }
@@ -437,7 +422,11 @@ header button a {
 .gallery .pic-two,
 .gallery .pic-three,
 .gallery .pic-four,
-.gallery .pic-five {
+.gallery .pic-five,
+.gallery .pic-six,
+.gallery .pic-seven,
+.gallery .pic-eight,
+.gallery .pic-nine {
     background-position: center;
     background-size: cover;
 }
@@ -452,12 +441,27 @@ header button a {
 .gallery .pic-three {
     background-image: url('../imgs/cctv.webp')
 }
+
+
 .gallery .pic-four {
-    background-image: url('../imgs/table.webp')
+    background-image: url('../imgs/food.webp')
 }
 .gallery .pic-five {
+    background-image: url('../imgs/almirah.webp')
+}
+.gallery .pic-six {
+    background-image: url('../imgs/water.webp')
+}
+.gallery .pic-seven {
     background-image: url('../imgs/power.webp')
 }
+.gallery .pic-eight {
+    background-image: url('../imgs/table.webp')
+}
+.gallery .pic-nine {
+    background-image: url('../imgs/cleaning.webp')
+}
+
 
 .gallery .fpic-one,
 .gallery .fpic-two,
